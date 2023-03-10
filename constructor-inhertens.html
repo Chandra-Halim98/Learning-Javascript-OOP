@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritens</title>
+  </head>
+  <body>
+    <script>
+      //inherten constructor function
+      function Mahasiswa(firstName, lastName) {
+        this.lastName = lastName;
+        Human.call(this, firstName);
+      }
+
+      const lala = new Mahasiswa("lala", "galih");
+
+      console.log(lala);
+    </script>
+  </body>
+</html>

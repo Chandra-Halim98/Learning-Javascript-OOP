@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Methode</title>
+  </head>
+  <body>
+    <script>
+      class Shape {
+        paint() {
+          console.log("ini Shape");
+        }
+      }
+
+      class Circle extends Shape {
+        paint() {
+          super.paint();
+          console.log("ini circle");
+        }
+      }
+
+      const circle = new Circle();
+      circle.paint();
+
+      console.log(circle);
+    </script>
+  </body>
+</html>
